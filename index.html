@@ -136,6 +136,41 @@
           </div>
         </div>
       </div>
+
+      <!-- my cars -->
+      <section id="my-cars">
+        <div class="container">
+          <div class="row text-center mb-3">
+            <div class="col">
+              <h3>My Cars</h3>
+            </div>
+          </div>
+          <div class="row">
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="car-box">
+                <h4 class="car-name">Black Porsche</h4>
+                <img src="img/car/black porsche.png" alt="" class="car-img" />
+                <a href="#" class="btn btn-light button-car-detail">Show Detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="car-box">
+                <h4 class="car-name">Red Coupe</h4>
+                <img src="img/car/red coupe.png" alt="" class="car-img" />
+                <a href="#" class="btn btn-light button-car-detail">Show Detail</a>
+              </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-3">
+              <div class="car-box">
+                <h4 class="car-name">Silver Audi</h4>
+                <img src="img/car/silver audi.png" alt="" class="car-img" />
+                <a href="#" class="btn btn-light button-car-detail">Show Detail</a>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1440 320">
         <path
           fill="#ffffff"
@@ -317,6 +352,16 @@
             form.reset();
           })
           .catch((error) => console.error('Error!', error.message));
+      });
+    </script>
+
+    <!-- tilt js -->
+    <script type="text/javascript" src="js/vanilla-tilt.js_master_dist_vanilla-tilt.min.js"></script>
+    <script type="text/javascript">
+      VanillaTilt.init(document.querySelectorAll('.car-box'), {
+        max: 25,
+        speed: 400,
+        glare: true,
       });
     </script>
   </body>
